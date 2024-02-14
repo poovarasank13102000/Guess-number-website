@@ -17,7 +17,7 @@ function update() {
         audio.play();
         
        }
-       playmusic('mp3.mp3')
+       playmusic('/Audio.mp3/mp3.mp3')
       
     }
     
@@ -30,7 +30,7 @@ function update() {
         audio.play();
         
        }
-       playmusic('wrong.mp3')
+       playmusic('/Audio.mp3/wrong.mp3')
     }
 }
 
