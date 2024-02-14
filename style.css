@@ -1,0 +1,92 @@
+body{
+    
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color:lightgreen;
+   
+}
+
+#outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 5px solid;
+    width: 25%;
+    margin-left: 35%;
+    background-color: white;
+   
+    
+}
+p{
+    background-color: white;
+}
+
+#img{
+    width: 100px;
+    border-radius: 10px;
+    margin-left: 65px;
+}
+
+h3{
+    text-align: center;
+    color:white;
+}
+
+#submit{
+    width: 190px;
+    margin-left: 24px;
+    background-color: aqua;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+
+
+
+#checknumber{
+    margin-top: 10px;
+    background-color: rgb(255, 127, 223);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input{
+    background-color: aqua;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input::placeholder{
+    font-weight: normal;
+    
+}
+#poppup{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+
+}
+
+#poppupbox{
+    background-color: coral;
+    width: 20%;
+    padding: 40px;
+    position: absolute;
+    border-radius: 10px;
+    
+}
+
+#poppupbox input{
+    margin-bottom: 10px;
+
+}

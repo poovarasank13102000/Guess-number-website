@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess number</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="outer">
+        <img src="imag.jpg" width="150px" alt="">
+        <input id="checknumber" placeholder="Enter your number"/>
+        <button onclick="update()" id="checknumber">Check</button>
+        <p id="result">You are Right/Wrong</p>
+        <p id="score">score:10</p>
+        <div id="poppup"></div>
+        <div id="poppupbox">
+            <img src="Guess-a-number.webp" id="img" alt="">
+            <h3>Welcome to Guess Game</h3>
+            
+            <button id="submit" onclick="change()">Lets Go</button>
+           <audio src="mp3.mp3" controls style="display: none;"></audio>
+        </div>
+</body>
+<script>
+    var checknumber = document.getElementById("checknumber")
+    var result = document.getElementById("result")
+    var randomnumber = Math.floor(Math.random() * 10) + 1
+    var score = document.getElementById("score")
+    var totalscore = 10
+    function update() {
+        var enternumber = checknumber.value
+        if (enternumber == randomnumber) {
+            console.log("Right")
+            result.textContent = "Right"
+            alert("You Won...")
+
+            function playmusic(audioname){
+            let audio=new Audio(audioname);
+            audio.play();
+            
+           }
+           playmusic('mp3.mp3')
+          
+        }
+        
+        else {
+            totalscore = totalscore - 1
+            score.textContent = "Totalscore:" + totalscore
+            result.textContent = "Wrong"
+            function playmusic(audioname){
+            let audio=new Audio(audioname);
+            audio.play();
+            
+           }
+           playmusic('wrong.mp3')
+        }
+    }
+
+    var poppup=document.getElementById("poppup")
+    var poppupbox=document.getElementById("poppupbox")
+    var btn=document.getElementById("submit")
+
+    function change(){
+        poppup.style.display='none'
+        poppupbox.style.display='none'
+    }
+
+
+
+
+
+</script>
+</div>
+
+</html>
