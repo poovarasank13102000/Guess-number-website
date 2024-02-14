@@ -34,12 +34,12 @@ function update() {
     }
 }
 
-var poppup=document.getElementById("poppup")
-var poppupbox=document.getElementById("poppupbox")
+var overlay=document.getElementById("overlay")
+var welcomepage=document.getElementById("welcomepage")
 var btn=document.getElementById("submit")
 
 function change(){
-    poppup.style.display='none'
-    poppupbox.style.display='none'
+    overlay.style.display='none'
+    welcomepage.style.display='none'
 }
 

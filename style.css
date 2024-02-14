@@ -66,7 +66,7 @@ input::placeholder{
     font-weight: normal;
     
 }
-#poppup{
+#overlay{
     background-color: black;
     position: absolute;
     width: 100%;
@@ -77,7 +77,7 @@ input::placeholder{
 
 }
 
-#poppupbox{
+#welcomepage{
     background-color: coral;
     width: 20%;
     padding: 40px;
@@ -86,7 +86,7 @@ input::placeholder{
     
 }
 
-#poppupbox input{
+#welcome-page input{
     margin-bottom: 10px;
 
 }
