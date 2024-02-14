@@ -12,34 +12,34 @@ function update() {
         result.textContent = "Right"
         alert("You Won...")
 
-        function playmusic(audioname){
-        let audio=new Audio(audioname);
-        audio.play();
-        
-       }
-       playmusic('/Audio.mp3/mp3.mp3')
-      
+        function playmusic(audioname) {
+            let audio = new Audio(audioname);
+            audio.play();
+
+        }
+        playmusic('/Audio.mp3/mp3.mp3')
+
     }
-    
+
     else {
         totalscore = totalscore - 1
         score.textContent = "Totalscore:" + totalscore
         result.textContent = "Wrong"
-        function playmusic(audioname){
-        let audio=new Audio(audioname);
-        audio.play();
-        
-       }
-       playmusic('/Audio.mp3/wrong.mp3')
+        function playmusic(audioname) {
+            let audio = new Audio(audioname);
+            audio.play();
+
+        }
+        playmusic('/Audio.mp3/wrong.mp3')
     }
 }
 
-var overlay=document.getElementById("overlay")
-var welcomepage=document.getElementById("welcomepage")
-var btn=document.getElementById("submit")
+var overlay = document.getElementById("overlay")
+var welcomepage = document.getElementById("welcomepage")
+var btn = document.getElementById("submit")
 
-function change(){
-    overlay.style.display='none'
-    welcomepage.style.display='none'
+function change() {
+    overlay.style.display = 'none'
+    welcomepage.style.display = 'none'
 }
 
